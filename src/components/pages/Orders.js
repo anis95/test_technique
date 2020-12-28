@@ -35,9 +35,9 @@ const Orders = (props) => {
         <TableHead>
           <TableRow>
             <TableCell>Influencers</TableCell>
-            <TableCell>sales Number</TableCell>
-            <TableCell>Commission amount</TableCell>
-            <TableCell>Product Number</TableCell>
+            <TableCell align="center">sales Number</TableCell>
+            <TableCell align="center">Commission amount</TableCell>
+            <TableCell align="center">Product Number</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -56,11 +56,13 @@ const Orders = (props) => {
                     </ListItem>
                   </TableCell>
 
-                  <TableCell>{SalesNumberInfluencer[key]}</TableCell>
-                  <TableCell>
+                  <TableCell align="center">
+                    {SalesNumberInfluencer[key]}
+                  </TableCell>
+                  <TableCell align="center">
                     {Math.round(commission[key] * 100) / 100} €
                   </TableCell>
-                  <TableCell>{product[key]}</TableCell>
+                  <TableCell align="center">{product[key]}</TableCell>
                 </TableRow>
               ))
             : null}
