@@ -63,7 +63,9 @@ export const ChartService = {
             last++;
           }
         });
-        resolve([first, medium, last]);
+        setTimeout(() => {
+          resolve([first, medium, last]);
+        }, 4000);
       });
     });
   },

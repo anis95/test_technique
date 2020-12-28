@@ -91,7 +91,7 @@ const BrandDetails = () => {
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
             {/* Chart */}
-            <Grid item xs={4} md={4} lg={4}>
+            <Grid item xs={12} md={5} lg={4}>
               <BrandPicture data={data} />
             </Grid>
             {/* Recent Deposits */}
@@ -108,7 +108,21 @@ const BrandDetails = () => {
                 <Chart chartSales={chartSales} month={month} />
               </Paper>
             </Grid>
-            <Mois handleChange={handleChange} month={month} />
+            <Grid item xs={3}>
+              <h2
+                style={{
+                  marginLeft: "89px",
+                  paddingTop: "15px",
+                  color: "#0277bd",
+                }}
+              >
+                {data[1] ? data[1].toUpperCase() : null}
+              </h2>
+            </Grid>
+            <Grid item xs={9}>
+              <Mois handleChange={handleChange} month={month} />
+            </Grid>
+
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Orders

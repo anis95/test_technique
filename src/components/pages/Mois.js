@@ -20,7 +20,7 @@ export const Mois = (props) => {
   return (
     <FormControl
       className={classes.formControl}
-      style={{ marginLeft: "calc(100% / 4)" }}
+      style={{ marginLeft: "calc(100% / 12)" }}
     >
       <InputLabel id="demo-simple-select-helper-label">Mois</InputLabel>
       <Select
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
     minWidth: 120,
-    width: "550px",
+    width: "360px",
   },
 }));
 export default Mois;

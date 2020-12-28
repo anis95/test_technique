@@ -25,9 +25,6 @@ export const BrandPicture = (props) => {
         alt=""
         src={`${data[0]}`}
       />
-      <Title align="center" styles={{ marginLeft: 90 }}>
-        {data[1]}
-      </Title>
     </div>
   );
 };

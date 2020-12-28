@@ -34,7 +34,7 @@ const Orders = (props) => {
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>influencers</TableCell>
+            <TableCell>Influencers</TableCell>
             <TableCell>sales Number</TableCell>
             <TableCell>Commission amount</TableCell>
             <TableCell>Product Number</TableCell>
@@ -57,7 +57,9 @@ const Orders = (props) => {
                   </TableCell>
 
                   <TableCell>{SalesNumberInfluencer[key]}</TableCell>
-                  <TableCell>{commission[key]}</TableCell>
+                  <TableCell>
+                    {Math.round(commission[key] * 100) / 100} €
+                  </TableCell>
                   <TableCell>{product[key]}</TableCell>
                 </TableRow>
               ))

@@ -10,7 +10,7 @@ const Deposits = (props) => {
   const { salesNumber } = props;
 
   /**
-   * Init Content
+   * Return Content
    */
   return (
     <div>
